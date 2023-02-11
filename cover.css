@@ -1,0 +1,131 @@
+*,
+html{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+/* Header */
+.header-container{
+    /* background-color: black; */
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 4vw;
+    z-index: 99;
+  }
+  
+.ul-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 4vw;
+  }
+  
+.li-header{
+    list-style-type: none;
+    padding: 15px;
+    margin: 10px;
+  }
+  
+.li-header:hover{
+    transition: .3s ease-in-out;
+    transition-delay: .1s;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: #FAAB78;
+    border-radius: 8px;
+  }
+  
+.text-header{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+  }
+/* End Header */
+/* Content */
+.content-container{
+    background-image: url(chart2.jpg);
+    width: 100%;
+    height: 100%;
+    /* filter: brightness(50%); */
+    /* background-color: #cccccc; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 900px; */
+    position: relative;
+}
+
+.ul-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 5vw;
+    /* margin-left: 30pt; */
+  }
+  
+ .li-content{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 100;
+    padding: 5vw;
+    margin: 5vw;
+  }
+
+.text2-content{
+    color: whitesmoke;
+    font-size: 3vw;
+    text-decoration: none;
+    margin-left: 10pt;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.text2-content:hover{
+    transition: .3s ease-in-out;
+    transition-delay: .1s;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: #FAAB78;
+    border-radius: 8px;
+  }
+
+.text-content{
+    color: whitesmoke;
+    margin-top: 800px;
+    font-size: 8vw;
+    animation: animasi 1s;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+.script-container{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.script-ul{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 55vw;
+  width: 100%;
+}
+/* End Content */
+
+  @keyframes animasi {
+    from {
+      transform: translateY(100%);
+    }
+    to{
+      transform: translateY(0%);
+    }
+  }

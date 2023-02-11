@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Performance</title>
+    <link rel="stylesheet" href="cover.css">
+</head>
+<body>
+    <div class="header-container">
+        <ul class="ul-header">
+            <li class="li-header">
+                <a href="cover.html" class="text-header">Home</a>
+            </li>
+            <li class="li-header">
+                <a href="cover2.html" class="text-header">Back</a>
+            </li>
+        </ul>
+    </div>
+    <div class="">
+        <ul class="ul-content">
+            <li class="li-content">
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2013',  1000,      400],
+          ['2014',  1170,      460],
+          ['2015',  660,       1120],
+          ['2016',  1030,      540],
+          ['2017',  869,       1279],
+          ['2018',  1148,       894],
+          ['2019',  1089,      622],
+          ['2020',  1003,      1188],
+          ['2021',  975,       758],
+          ['2022',  985,       743]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+            </li>
+        </ul>
+    </div>
+    <div id="chart_div" style="width: 100%; height: 40vw;"></div>
+</body>
+</html>
